@@ -6,7 +6,7 @@
 
 body{
     background-color: #1e1e1e;
-    font-family: sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #a0a0a0;
     line-height: 1.6;
 }
@@ -40,7 +40,7 @@ body{
 /* Profile section */
 
 .profile{
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -60,7 +60,7 @@ body{
 .profile p{
     background-color: #1e1e1e;
     padding: 5px 15px;
-    color: #FFBF00;
+     color: #ffbf00fb;
     border: 1px solid #3a3a3a;
     font-size: 0.8rem;
     border-radius: 8px;
@@ -84,7 +84,7 @@ body{
     color: #a0a0a0;
 }
 .value{
-    color: #e0e0e0;
+    color: #ffbf00fb;
     text-decoration: none;
 }
 
@@ -112,3 +112,91 @@ body{
 .social img:hover{
     filter: grayscale(0) invert(0);
 }
+
+#navigation{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.active, nav a:hover{
+    color: #FFBF00;
+}
+
+
+/* about me */
+
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color: #a0a0a0;
+    color: #d0d0d0;
+    font-size: 1rem;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+
+/* skills section */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(120px,1fr));
+    gap: 30px;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img{
+    height: 50px;
+    width: 50px;
+    filter: invert(75%) sepia(40%) saturate(1000%) hue-rotate(350deg) brightness(100%) contrast(100%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(94, 9, 9, 0.3);
+}
+
+
